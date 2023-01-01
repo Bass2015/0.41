@@ -23,6 +23,9 @@ config.read('../config.ini')  # <- that in case you're in your personal folder
 db_info = config['DATABASE']
 conn = db.get_connection(db_info) # This is the connection with the database
 ```
+
+> Obviously, in a normal project I should have not pushed that config file, with the password to access a database. But as this is just a practice project, and the data is not sensitive, we can leave it as it is and everybody can create the connection to the database
+
 I will write methods to retrieve specific data from the database, and return it as pandas Dataframes. If you need a specific method just write it here in pseudocode. (in suggested methods)
 
 ### Suggested methods.
